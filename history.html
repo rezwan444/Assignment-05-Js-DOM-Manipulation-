@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <!-- menu section start -->
+    <header class="sticky top-0 z-50 backdrop-blur-md">
+        <section class="bg-[#F9F7F3] px-4 md:px-6">
+            <div class="container mx-auto flex justify-between items-center pt-4 pb-12">
+                <details class="dropdown md:hidden">
+                    <summary class="m-1"><i class="fa-solid fa-bars"></i></summary>
+                    <ul class="menu dropdown-content bg-base-100 rounded-box z-[1] w-20 p-2 shadow mt-2">
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                </details>
+                <div class="md:text-lg lg:text-xl font-semibold hidden md:block px-5 py-1 bg-[#B4F461] rounded-md"><a
+                        href="#">Blog</a></div>
+
+                <div class="flex items-center gap-2 lg:gap-4">
+                    <img src="assets/logo.png" alt="logo">
+                    <span class="md:text-lg lg:text-xl font-semibold">Donate Bangladesh</span>
+                </div>
+
+                <div class="flex gap-1 lg:gap-2 items-center">
+                    <img src="assets/coin.png" alt="image">
+                    <span class="md:text-lg lg:text-xl font-medium">60000 BDT</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="flex justify-center gap-4 mt-8 lg:mt-16">
+                <button id="btnDonation" class="border border-gray-300 bg-white text-black px-6 py-2 rounded"><a
+                        href="index.html">Donation</a></button>
+                <button id="btnHistory" class="border border-gray-300 bg-[#B4F461] text-black px-6 py-2 rounded"><a
+                        href="#">History</a></button>
+            </div>
+        </section>
+    </header>
+    <!-- menu section end -->
+
+    <main></main>
+
+    <footer class="bg-[#F9F7F3] p-12 mt-16 fixed bottom-0 w-full"></footer>
+    <script src="./JS/button-active.js"></script>
+</body>
+
+</html>
