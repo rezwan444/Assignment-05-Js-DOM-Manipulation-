@@ -40,7 +40,7 @@
 
         <div class="flex gap-1 lg:gap-2 items-center">
           <img src="assets/coin.png" alt="image">
-          <span id="main-balance" class="md:text-lg lg:text-xl font-medium">60000 BDT</span>
+          <div id="main-balance" class="md:text-lg lg:text-xl font-medium">60000</div><span>BDT</span>
         </div>
       </div>
     </section>
@@ -69,7 +69,7 @@
           <div class="lg:w-1/2 space-y-7 mt-8 lg:mt-0">
             <button class="bg-gray-100 flex items-center gap-2 px-4 py-2 rounded-md">
               <img src="assets/coin.png" alt="logo">
-              <span id="total-donate-amount">0 BDT</span>
+              <div id="total-donate-amount">0</div><span>BDT</span>
             </button>
 
             <h1 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
@@ -84,14 +84,16 @@
             </p>
 
             <div>
-              <input id="input-donate-amount" type="text" placeholder="Write Donation Amount"
+              <input id="input-donate-amount" type="text" placeholder="Enter Amount"
                 class="border outline-none w-full py-3 px-4 rounded-lg">
             </div>
 
             <div>
-              <button id="btn-donate-now" class="bg-[#B4F461] w-full py-3 rounded-lg font-bold"
-                onclick="my_modal_1.showModal()">Donate Now</button>
-              <dialog id="my_modal_1" class="modal p-8">
+              <button id="btn-donate-now" class="bg-[#B4F461] w-full py-3 rounded-lg font-bold">Submit</button>
+                
+                <!-- <p>onclick="my_modal_1.showModal()">Donate Now</p> -->
+
+              <!-- <dialog id="my_modal_1" class="modal p-8">
                 <div class="modal-box">
                   <h3 class="font-bold text-center text-4xl">Congrates!</h3>
                   <div class="flex justify-center mt-4">
@@ -105,7 +107,7 @@
                     <div class="text-center mt-6"><button class="btn">close confirmation</button></div>
                   </form>
                 </div>
-              </dialog>
+              </dialog> -->
             </div>
 
           </div>
@@ -123,7 +125,7 @@
           <div class="lg:w-1/2 space-y-7 mt-8 lg:mt-0">
             <button class="bg-gray-100 flex items-center gap-2 px-4 py-2 rounded-md">
               <img src="assets/coin.png" alt="logo">
-              <span>0 BDT</span>
+              <div id="total-donate-amount2">0</div><span>BDT</span>
             </button>
 
             <h1 class="text-xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
@@ -137,7 +139,7 @@
             </p>
 
             <div>
-              <input type="text" placeholder="Write Donation Amount"
+              <input id="input-donate-amount2" type="text" placeholder="Enter Amount"
                 class="border outline-none w-full py-3 px-4 rounded-lg">
             </div>
 
@@ -145,9 +147,12 @@
               <button class="bg-[#B4F461] w-full py-3 rounded-lg font-bold">Donate Now</button>
             </div> -->
             <div>
-              <button class="bg-[#B4F461] w-full py-3 rounded-lg font-bold" onclick="my_modal_2.showModal()">Donate
+              <button id="btn-donate-now2" class="bg-[#B4F461] w-full py-3 rounded-lg font-bold">Donate
                 Now</button>
-              <dialog id="my_modal_2" class="modal p-8">
+
+                <!-- <p>onclick="my_modal_2.showModal()"</p> -->
+
+              <!-- <dialog id="my_modal_2" class="modal p-8">
                 <div class="modal-box">
                   <h3 class="font-bold text-center text-4xl">Congrates!</h3>
                   <div class="flex justify-center mt-4">
@@ -161,7 +166,7 @@
                     <div class="text-center mt-6"><button class="btn">close confirmation</button></div>
                   </form>
                 </div>
-              </dialog>
+              </dialog> -->
             </div>
 
           </div>
@@ -178,7 +183,7 @@
           <div class="lg:w-1/2 space-y-7 mt-8 lg:mt-0">
             <button class="bg-gray-100 flex items-center gap-2 px-4 py-2 rounded-md">
               <img src="assets/coin.png" alt="logo">
-              <span>0 BDT</span>
+              <div id="total-donate-amount3">0</div><span>BDT</span>
             </button>
 
             <h1 class="text-xl font-bold">Aid for Injured in the Quota Movement</h1>
@@ -193,7 +198,7 @@
             </p>
 
             <div>
-              <input type="text" placeholder="Write Donation Amount"
+              <input id="input-donate-amount3" type="text" placeholder="Enter Amount"
                 class="border outline-none w-full py-3 px-4 rounded-lg">
             </div>
 
@@ -202,9 +207,12 @@
             </div> -->
 
             <div>
-              <button class="bg-[#B4F461] w-full py-3 rounded-lg font-bold" onclick="my_modal_3.showModal()">Donate
+              <button id="btn-donate-now3" class="bg-[#B4F461] w-full py-3 rounded-lg font-bold">Donate
                 Now</button>
-              <dialog id="my_modal_3" class="modal p-8">
+
+                <!-- <p>onclick="my_modal_3.showModal()"</p> -->
+
+              <!-- <dialog id="my_modal_3" class="modal p-8">
                 <div class="modal-box">
                   <h3 class="font-bold text-center text-4xl">Congrates!</h3>
                   <div class="flex justify-center mt-4">
@@ -218,7 +226,7 @@
                     <div class="text-center mt-6"><button class="btn">close confirmation</button></div>
                   </form>
                 </div>
-              </dialog>
+              </dialog> -->
             </div>
 
           </div>
@@ -234,7 +242,9 @@
   <footer class="bg-[#F9F7F3] p-12 mt-16 "></footer>
 
   <script src="./JS/common-function.js"></script>
-  <script src="./JS/donation-amount.js"></script>
+  <script src="./JS/noakhali-donate.js"></script>
+  <script src="./JS/feni-donate.js"></script>
+  <script src="./JS/quota-donate.js"></script>
   <script src="./JS/button-active.js"></script>
 </body>
 
